@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%);}
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="rating-block">
+    <div class="rating-star"><img src="images/icon-star.svg"></div>
+    <h2>How did we do?</h2>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+    <div class="Choose-rate">
+      <div class="star" id="one" onclick="takeRate('1', '#one')">1</div>
+      <div class="star" id="two" onclick="takeRate('2','#two')">2</div>
+      <div class="star" id="tree" onclick="takeRate('3','#tree')">3</div>
+      <div class="star" id="four" onclick="takeRate('4','#four');",>4</div>
+      <div class="star" id="five" onclick="takeRate('5','#five')">5</div>
+    </div>
+  
+
+    <input onclick = "add_a_Rate()"type="button" value="SUBMIT" class="submit-rate">
+  </div>
+  
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="thank-block-off">
+    <img src="images/illustration-thank-you.svg">
+    <!--You selected <!-- Add rating here  out of 5-->
+    <h3 class="selected-rate-message">4</h3>
+    <h1>Thank you!</h1>
+    <p class="thank-message">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+
+  </div>
+  
+
+  
+
+  
+
+  <!-- Thank you state end -->
+
+  <br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Hyogan/interactive_rating_component.git">Nelson Tiagho</a>.
+  </div>
+ <script  src="app.js"></script>
+</body>
+</html>

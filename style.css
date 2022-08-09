@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family:'Overpass', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background:hsl(216, 14%, 15%);  
+}
+.rating-block {
+
+    display: flex;
+    flex-direction: column;
+    background:hsl(213, 19%, 18%);
+    border-radius: 30px;
+    margin-top: 100px;
+    height: 300px;
+    width: 350px;
+    padding: 3%;
+}
+.rating-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:hsla(216, 12%, 54%, 0.236);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    margin-bottom: 6.5%;
+}
+.rating-star img {
+    width: 15px;
+    height: 15px;
+   
+}
+
+.rating-block h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 4%;
+}
+.rating-block p {
+    color:  hsla(218, 24%, 82%, 0.725);
+    max-width: 95%;
+    margin-bottom: 4%;
+    font-size: 15px;
+}
+.Choose-rate {
+    display: flex;
+    margin-bottom: 4%;
+    
+}
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    height: 22px;
+    width: 22px;
+    background:hsla(216, 12%, 54%, 0.236);
+    border-radius: 60%;
+    color: rgba(255, 255, 255, 0.639);
+    cursor: pointer;
+    
+}
+.star:hover{
+    background:hsl(25, 97%, 53%);
+    transition: 1s;
+}
+#one{
+    margin-left: 0;
+}
+.submit-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 13%;
+    background:hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 20px;
+    margin-left: 3%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+.submit-rate:hover {
+    color:hsl(25, 97%, 53%);
+    background: white;
+    transition: 1s;
+}
+
+.thank-block-off {
+    display: none;
+}
+
+.thank-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:hsl(213, 19%, 18%);
+    border-radius: 30px;
+    margin-top: 100px;
+    height: 300px;
+    width: 310px;
+    padding: 3%;
+
+}
+.thank-block img {
+    height: 35%;
+    width: 50%;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+
+.selected-rate-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0;
+    background:hsla(216, 12%, 54%, 0.236);
+    width: 70%;
+    height: 10%;
+    margin-bottom: 7%;
+}
+
+.thank-block h1 {
+    font-size: 30px;
+    padding-bottom: 3%;
+}
+.thank-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: hsla(217, 28%, 82%, 0.725);;
+    font-size: 12px;
+    font-weight: 450;
+    max-width: 87%;
+}
+
+.submit-block-disapear{
+    display: none;
+}
+.attribution {
+    padding-top: 40px;
+}
+@media screen and (max-width:375px) {
+    .thank-block {
+        width: 290px;
+        height: 320px;
+    }
+    .thank-block img {
+        height: 30%;
+    }
+    .rating-block {
+        width: 290px;
+        height: 320px;
+    }
+}
